@@ -1,0 +1,87 @@
+/*PROYECTO.HTML*/
+
+/*Sección 1 – about proyecto*/
+.about-proyecto {
+  padding: 7%;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    opacity: 0.85;
+    margin-bottom: 10%;
+  }
+
+  h1 {
+    @media only screen and (max-width: 480px) {
+      font-size: 4rem;
+    }
+  }
+
+  .peque {
+    font-size: 1.5rem;
+  }
+
+  .ref {
+    a {
+      margin-top: 15px;
+    }
+  }
+
+  p {
+    span.tooltp {
+      font-style: oblique;
+      display: inline;
+      @extend %linkHover;
+
+      &:hover {
+        background-position: left bottom;
+      }
+    }
+  }
+}
+
+/*Sección 2 – Imagenes*/
+.img-proyecto {
+  img {
+    padding-top: 10%;
+
+    &:first-child {
+      @include headIndex(150px);
+
+      @media only screen and (max-width: 480px) {
+        position: static;
+      }
+    }
+
+    &:last-child {
+      @include headIndex(0);
+      top: 150px;
+
+      @media only screen and (max-width: 480px) {
+        position: static;
+      }
+    }
+  }
+}
+
+/*Sección 3*/
+.about-proyecto-2 {
+  padding: 25% 0 10% 0;
+
+  .retazo {
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+      position: relative;
+      left: 10%;
+    }
+  }
+}
+
+/*Estilos para sobreescribir el toltip de BS*/
+
+.tooltip-inner {
+  font-family: $typoPrincipal;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+}
+/*FIN PROYECTO.HTML*/

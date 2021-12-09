@@ -1,0 +1,65 @@
+/*Navbar*/
+
+nav.navbar {
+  background-color: $colorSecu;
+  padding: 0;
+
+  .container-fluid {
+    @media only screen and (max-width: 1023px) {
+      background: $colorPrim;
+    }
+
+    button.navbar-toggler {
+      @media only screen and (max-width: 1023px) {
+        font-family: $typoPrincipal;
+        font-size: 2rem;
+        color: $colorSecu;
+        border: none;
+      }
+
+      &:focus{
+        @media only screen and (max-width: 1023px){
+          border: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .navbar-collapse {
+      justify-content: center;
+
+      @media only screen and (max-width: 1023px){
+        padding: 10% 5%;
+      }
+
+
+      ul {
+        li {
+          margin: 0 20px;
+
+          a {
+            @include typoNav($colorPrim);
+            @extend %linkHover;
+
+            &:hover {
+              color: $colorPrim;
+              background-position: left bottom;
+              text-decoration: line-through;
+            }
+
+            @media only screen and (max-width: 1023px){
+              @include typoNav($colorSecu);
+              background: transparent;
+            }
+
+          }
+          
+          .nav-link.active {
+            font-family: $typoWide;
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}

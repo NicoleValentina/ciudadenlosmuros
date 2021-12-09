@@ -1,0 +1,229 @@
+/*Header*/
+.index {
+  h1 {
+    font-family: $typoWide;
+    color: $colorPrim;
+    font-size: 10rem;
+    line-height: 12rem;
+    width: map-get($espaciados, medio);
+    transition: all 2s;
+
+    &:hover {
+      animation: colores 2s;
+      animation-iteration-count: 50;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 5rem;
+      line-height: 5rem;
+      width: map-get($espaciados, ancho);
+    }
+
+    @media only screen and (min-width: 720px) and (max-width: 1024px) {
+      font-size: 11rem;
+      width: map-get($espaciados, ancho);
+    }
+
+    @media only screen and (min-width: 1920px) {
+      font-size: 15rem;
+      line-height: 14rem;
+    }
+  }
+
+  h2 {
+    font-family: $typoPrincipal;
+    color: $colorPrim;
+    font-size: 3rem;
+    font-weight: 300;
+    width: map-get($espaciados, tercio);
+    position: absolute;
+    top: 35%;
+    right: map-get($espaciados, medio) /10;
+
+    @media only screen and (max-width: 480px) {
+      position: static;
+      margin-top: map-get($espaciados, medio) /10;
+      font-size: 2.5rem;
+      width: map-get($espaciados, cuarto) *3;
+    }
+
+    @media only screen and (min-width: 720px) and (max-width: 1024px) {
+      position: relative;
+      font-size: 5rem;
+      width: map-get($espaciados, cuarto) *3;
+      top: 200px;
+    }
+  }
+
+  .img-index {
+    img {
+      &:first-child {
+        @include headIndex(300px);
+
+        @media only screen and (max-width: 480px) {
+          top: 20px;
+          margin-bottom: 100px;
+        }
+      }
+
+      &:nth-child(2) {
+        @include headIndex(475px);
+
+        @media only screen and (min-width: 1920px) {
+          position: relative;
+          bottom: 550px;
+        }
+      }
+
+      &:last-child {
+        @include headIndex(115px);
+        right: 100px;
+
+        @media only screen and (min-width: 1920px) {
+          position: relative;
+          bottom: 50px;
+          right: 100px;
+        }
+      }
+    }
+  }
+}
+
+/*Animación*/
+@keyframes colores {
+  0% {
+    color: $colorPrim;
+  }
+
+  25% {
+    color: $colorAcento;
+  }
+
+  50% {
+    color: #f2f2f2;
+  }
+
+  75% {
+    color: $colorAcento;
+  }
+}
+/*Fin Animación*/
+
+/*Cita principal + imagenes*/
+.cita {
+  padding-top: 15%;
+
+  @media only screen and (max-width: 480px) {
+    padding: map-get($espaciados, tercio) 0;
+  }
+
+  @media only screen and (min-width: 720px) and (max-width: 1024px) {
+    padding: 5% 0;
+    margin-bottom: map-get($espaciados, cuarto);
+  }
+}
+
+.imgcita {
+  img {
+    &:first-child {
+      position: relative;
+      bottom: 200px;
+
+      @media only screen and (max-width: 480px) {
+        bottom: 100px;
+      }
+    }
+
+    &:last-child {
+      position: relative;
+      top: 200px;
+
+      @media only screen and (max-width: 480px) {
+        top: 0;
+      }
+    }
+  }
+}
+/*Fin cita principal + imagenes*/
+
+/*Sobre el proyecto*/
+.about {
+  margin: 30% 7% 20% 7%;
+
+  .mini {
+    @include miniP($colorAcento);
+    position: relative;
+    top: 85px;
+    right: 75px;
+    @include transform(rotate(-90deg));
+  }
+
+  .row {
+    margin-left: map-get($espaciados, medio) /10;
+  }
+
+  h3 {
+    font-family: $typoWide;
+    font-size: 1.2rem;
+    text-align: center;
+    color: $colorPrim;
+    margin-top: map-get($espaciados, medio) /5;
+  }
+}
+/*Fin sobre el proyecto*/
+
+/*Galeria*/
+.about-galeria-cont {
+  margin: 2% 0 20% 0;
+
+  h4 {
+    @include miniP($colorSecu);
+    margin: 0 5%;
+    background: $colorAcento;
+    margin-bottom: 20px;
+  }
+
+  .pilar {
+    color: $colorSecu;
+    background: $colorSecu;
+    transition: all 1s;
+
+    &:hover {
+      color: $colorPrim;
+      @include transform(scale(110%));
+    }
+
+    p{
+      @include miniP($colorSecu)
+    }
+
+    &:nth-child(1) {
+      @media only screen and (max-width: 480px) {
+        display: none;
+      }
+
+      @media only screen and (min-width: 720px) and (max-width: 1024px) {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      @media only screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+
+    &:nth-child(6) {
+      @media only screen and (max-width: 480px) {
+        display: none;
+      }
+
+      @media only screen and (min-width: 720px) and (max-width: 1024px) {
+        display: none;
+      }
+    }
+  }
+}
+/*Fin galería*/
+
+

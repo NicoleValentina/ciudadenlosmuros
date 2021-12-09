@@ -1,0 +1,45 @@
+/*ARCHIVO.HTML*/
+.archivo{
+    padding: 7% 0;
+
+    h1{
+        position: static;
+    }
+}
+
+.galeria-contenedor{
+    padding-bottom: 7%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 40px;
+
+    .galeria{
+        width: 32%;
+        transition: all 1s;
+
+        &:hover{
+            @include transform(scale(105%));
+        }
+
+        @media only screen and (max-width: 480px){
+            width: 100%;
+        }
+
+        a{
+            img{
+                width: 100%;
+            }
+
+            .fecha-archivo{
+                color: $colorPrim;
+                display: inline-block;
+                text-decoration: none;
+                font-size: 1.8rem;
+            }
+        }
+
+    }
+}
+/*FIN ARCHIVO.HTML*/

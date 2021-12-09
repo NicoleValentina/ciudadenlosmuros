@@ -1,0 +1,49 @@
+/*Título sticky index*/
+.main-titulo{
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    display: flex;
+    justify-content: right;
+
+    &:hover {
+        animation: colores 2s;
+        animation-iteration-count: 50;
+    }
+
+    p{
+        @extend %tituloHeader;
+    }
+}
+/*Fin título sticky index*/
+
+
+/*Título secciones*/
+.secc-header{
+    z-index: 999;
+
+    a.volver-index{
+        font-family: $typoPrincipal;
+        color: $colorPrim;
+        font-size: $parrafo;
+        position: fixed;
+        @extend %linkHover;
+
+        &:hover{
+            color: var(--colorPrim);
+            background-position: left bottom;
+        }
+    }
+
+    p{
+        @extend %tituloHeader;
+        right: 0;
+        position: fixed;
+
+        &:hover{
+            animation: colores 2s;
+            animation-iteration-count: 50;
+        }
+    }
+}
+/*Fin título secciones*/

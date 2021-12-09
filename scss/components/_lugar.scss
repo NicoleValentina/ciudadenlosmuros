@@ -1,0 +1,94 @@
+/*LUGAR.HTML*/
+
+.lugar {
+  .about-lugar {
+    padding: 0 map-get($espaciados, margen);
+
+    @media only screen and (max-width: 480px) {
+      padding-top: 25%;
+    }
+
+    img {
+      margin-bottom: 10%;
+    }
+
+    h1 { 
+      @media only screen and (max-width: 480px) {
+        font-size: 5rem;
+      }
+    }
+
+    &:first-child {
+      padding-top: 7%;
+    }
+
+    &:nth-child(4) {
+      margin: 40% 0 25% 0;
+
+      @media only screen and (max-width: 480px) {
+        margin: 20% 7%;
+      }
+    }
+  }
+
+  .mapa {
+    margin: 10% 0;
+  }
+
+  .img-lugar {
+    margin: 0;
+
+    div {
+      img {
+        width: 100%;
+        margin: 2% 0;
+      }
+
+      &:nth-child(2) {
+        position: relative;
+        top: 400px;
+
+        @media only screen and (max-width: 480px) {
+          position: static;
+        }
+      }
+
+      &:last-child {
+        position: relative;
+        top: 250px;
+
+        @media only screen and (max-width: 480px) {
+          position: static;
+        }
+      }
+    }
+  }
+
+  .img-lugar-2 {
+    margin-bottom: 10%;
+
+    div {
+      &:first-child {
+        @include headIndex(100px);
+
+        @media only screen and (max-width: 480px) {
+          position: static;
+        }
+      }
+
+      &:last-child {
+        @include headIndex(250px);
+
+        @media only screen and (max-width: 480px) {
+          position: static;
+        }
+      }
+
+      img {
+        width: 100%;
+        margin: 2% 0;
+      }
+    }
+  }
+}
+/*FIN LUGAR.HTML*/

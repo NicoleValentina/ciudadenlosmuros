@@ -1,0 +1,609 @@
+@charset "UTF-8";
+/*Base*/
+/*Estilos tipografía*/
+/*Imagenes header index*/
+/*Prefijos transformaciones*/
+/*Texto pequeño resaltado index*/
+/*Estilos typo*/
+/*Efecto hover links*/
+a, nav.navbar .container-fluid .navbar-collapse ul li a, .secc-header a.volver-index, .about-proyecto p span.tooltp, .destacados ul li a, .destacados .link-secciones a {
+  display: inline-block;
+  background: linear-gradient(to right, yellow 50%, #fff 50%);
+  background-size: 205% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out; }
+
+/*Titulo header*/
+.main-titulo p, .secc-header p {
+  font-family: "roc-grotesk-extrawide", "sans-serif";
+  font-size: 1.8em;
+  width: 200px;
+  text-align: right; }
+
+/*Títulos secciones (H1)*/
+section h1 {
+  font-family: "roc-grotesk-extrawide", "sans-serif";
+  font-size: 10rem;
+  position: absolute; }
+
+/*Links destacados*/
+.destacados ul li a, .destacados .link-secciones a {
+  font-family: "roc-grotesk-extrawide", "sans-serif";
+  color: #000;
+  font-size: 5rem;
+  font-weight: 700;
+  display: block;
+  margin: 75px 0;
+  text-decoration: none; }
+
+/*Estilos generales*/
+html {
+  font-size: 10px; }
+  html body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; }
+
+::selection {
+  color: #000;
+  background: yellow; }
+
+.material-icons {
+  position: relative;
+  top: 3px; }
+
+section {
+  margin: 0 7%; }
+  @media only screen and (max-width: 480px) {
+    section h1 {
+      font-size: 4rem;
+      padding-top: 25%; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "roc-grotesk", "sans-serif"; }
+
+p {
+  font-family: "roc-grotesk", "sans-serif";
+  font-size: 2rem; }
+
+a {
+  color: #000; }
+  a:hover {
+    color: #000;
+    background-position: left bottom; }
+
+.peque, .ref {
+  font-size: 1.5rem; }
+
+/*Components*/
+/*Navbar*/
+nav.navbar {
+  background-color: #fff;
+  padding: 0; }
+  @media only screen and (max-width: 1023px) {
+    nav.navbar .container-fluid {
+      background: #000; } }
+  @media only screen and (max-width: 1023px) {
+    nav.navbar .container-fluid button.navbar-toggler {
+      font-family: "roc-grotesk", "sans-serif";
+      font-size: 2rem;
+      color: #fff;
+      border: none; } }
+  @media only screen and (max-width: 1023px) {
+    nav.navbar .container-fluid button.navbar-toggler:focus {
+      border: none;
+      box-shadow: none; } }
+  nav.navbar .container-fluid .navbar-collapse {
+    justify-content: center; }
+    @media only screen and (max-width: 1023px) {
+      nav.navbar .container-fluid .navbar-collapse {
+        padding: 10% 5%; } }
+    nav.navbar .container-fluid .navbar-collapse ul li {
+      margin: 0 20px; }
+      nav.navbar .container-fluid .navbar-collapse ul li a {
+        display: inline-block;
+        font-size: 2rem;
+        font-family: "roc-grotesk", "sans-serif";
+        font-weight: 300;
+        color: #000; }
+        nav.navbar .container-fluid .navbar-collapse ul li a:hover {
+          color: #000;
+          background-position: left bottom;
+          text-decoration: line-through; }
+        @media only screen and (max-width: 1023px) {
+          nav.navbar .container-fluid .navbar-collapse ul li a {
+            display: inline-block;
+            font-size: 2rem;
+            font-family: "roc-grotesk", "sans-serif";
+            font-weight: 300;
+            color: #fff;
+            background: transparent; } }
+      nav.navbar .container-fluid .navbar-collapse ul li .nav-link.active {
+        font-family: "roc-grotesk-extrawide", "sans-serif";
+        font-size: 1.8rem; }
+
+/*Título sticky index*/
+.main-titulo {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  display: flex;
+  justify-content: right; }
+  .main-titulo:hover {
+    animation: colores 2s;
+    animation-iteration-count: 50; }
+
+/*Fin título sticky index*/
+/*Título secciones*/
+.secc-header {
+  z-index: 999; }
+  .secc-header a.volver-index {
+    font-family: "roc-grotesk", "sans-serif";
+    color: #000;
+    font-size: 2rem;
+    position: fixed; }
+    .secc-header a.volver-index:hover {
+      color: var(--colorPrim);
+      background-position: left bottom; }
+  .secc-header p {
+    right: 0;
+    position: fixed; }
+    .secc-header p:hover {
+      animation: colores 2s;
+      animation-iteration-count: 50; }
+
+/*Fin título secciones*/
+/*Header*/
+.index h1 {
+  font-family: "roc-grotesk-extrawide", "sans-serif";
+  color: #000;
+  font-size: 10rem;
+  line-height: 12rem;
+  width: 50%;
+  transition: all 2s; }
+  .index h1:hover {
+    animation: colores 2s;
+    animation-iteration-count: 50; }
+  @media only screen and (max-width: 480px) {
+    .index h1 {
+      font-size: 5rem;
+      line-height: 5rem;
+      width: 100%; } }
+  @media only screen and (min-width: 720px) and (max-width: 1024px) {
+    .index h1 {
+      font-size: 11rem;
+      width: 100%; } }
+  @media only screen and (min-width: 1920px) {
+    .index h1 {
+      font-size: 15rem;
+      line-height: 14rem; } }
+
+.index h2 {
+  font-family: "roc-grotesk", "sans-serif";
+  color: #000;
+  font-size: 3rem;
+  font-weight: 300;
+  width: 30%;
+  position: absolute;
+  top: 35%;
+  right: 5%; }
+  @media only screen and (max-width: 480px) {
+    .index h2 {
+      position: static;
+      margin-top: 5%;
+      font-size: 2.5rem;
+      width: 75%; } }
+  @media only screen and (min-width: 720px) and (max-width: 1024px) {
+    .index h2 {
+      position: relative;
+      font-size: 5rem;
+      width: 75%;
+      top: 200px; } }
+
+.index .img-index img:first-child {
+  position: relative;
+  bottom: 300px;
+  z-index: -1; }
+  @media only screen and (max-width: 480px) {
+    .index .img-index img:first-child {
+      top: 20px;
+      margin-bottom: 100px; } }
+
+.index .img-index img:nth-child(2) {
+  position: relative;
+  bottom: 475px;
+  z-index: -1; }
+  @media only screen and (min-width: 1920px) {
+    .index .img-index img:nth-child(2) {
+      position: relative;
+      bottom: 550px; } }
+
+.index .img-index img:last-child {
+  position: relative;
+  bottom: 115px;
+  z-index: -1;
+  right: 100px; }
+  @media only screen and (min-width: 1920px) {
+    .index .img-index img:last-child {
+      position: relative;
+      bottom: 50px;
+      right: 100px; } }
+
+/*Animación*/
+@keyframes colores {
+  0% {
+    color: #000; }
+  25% {
+    color: yellow; }
+  50% {
+    color: #f2f2f2; }
+  75% {
+    color: yellow; } }
+
+/*Fin Animación*/
+/*Cita principal + imagenes*/
+.cita {
+  padding-top: 15%; }
+  @media only screen and (max-width: 480px) {
+    .cita {
+      padding: 30% 0; } }
+  @media only screen and (min-width: 720px) and (max-width: 1024px) {
+    .cita {
+      padding: 5% 0;
+      margin-bottom: 25%; } }
+
+.imgcita img:first-child {
+  position: relative;
+  bottom: 200px; }
+  @media only screen and (max-width: 480px) {
+    .imgcita img:first-child {
+      bottom: 100px; } }
+
+.imgcita img:last-child {
+  position: relative;
+  top: 200px; }
+  @media only screen and (max-width: 480px) {
+    .imgcita img:last-child {
+      top: 0; } }
+
+/*Fin cita principal + imagenes*/
+/*Sobre el proyecto*/
+.about {
+  margin: 30% 7% 20% 7%; }
+  .about .mini {
+    display: inline-block;
+    background: yellow;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: relative;
+    top: 85px;
+    right: 75px;
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+  .about .row {
+    margin-left: 5%; }
+  .about h3 {
+    font-family: "roc-grotesk-extrawide", "sans-serif";
+    font-size: 1.2rem;
+    text-align: center;
+    color: #000;
+    margin-top: 10%; }
+
+/*Fin sobre el proyecto*/
+/*Galeria*/
+.about-galeria-cont {
+  margin: 2% 0 20% 0; }
+  .about-galeria-cont h4 {
+    display: inline-block;
+    background: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0 5%;
+    background: yellow;
+    margin-bottom: 20px; }
+  .about-galeria-cont .pilar {
+    color: #fff;
+    background: #fff;
+    transition: all 1s; }
+    .about-galeria-cont .pilar:hover {
+      color: #000;
+      -webkit-transform: scale(110%);
+      -o-transform: scale(110%);
+      -moz-transform: scale(110%);
+      transform: scale(110%); }
+    .about-galeria-cont .pilar p {
+      display: inline-block;
+      background: #fff;
+      font-size: 1.2rem;
+      text-transform: uppercase; }
+    @media only screen and (max-width: 480px) {
+      .about-galeria-cont .pilar:nth-child(1) {
+        display: none; } }
+    @media only screen and (min-width: 720px) and (max-width: 1024px) {
+      .about-galeria-cont .pilar:nth-child(1) {
+        display: none; } }
+    @media only screen and (max-width: 480px) {
+      .about-galeria-cont .pilar:nth-child(2) {
+        display: none; } }
+    @media only screen and (max-width: 480px) {
+      .about-galeria-cont .pilar:nth-child(6) {
+        display: none; } }
+    @media only screen and (min-width: 720px) and (max-width: 1024px) {
+      .about-galeria-cont .pilar:nth-child(6) {
+        display: none; } }
+
+/*Fin galería*/
+/*LUGAR.HTML*/
+.lugar .about-lugar {
+  padding: 0 7%; }
+  @media only screen and (max-width: 480px) {
+    .lugar .about-lugar {
+      padding-top: 25%; } }
+  .lugar .about-lugar img {
+    margin-bottom: 10%; }
+  @media only screen and (max-width: 480px) {
+    .lugar .about-lugar h1 {
+      font-size: 5rem; } }
+  .lugar .about-lugar:first-child {
+    padding-top: 7%; }
+  .lugar .about-lugar:nth-child(4) {
+    margin: 40% 0 25% 0; }
+    @media only screen and (max-width: 480px) {
+      .lugar .about-lugar:nth-child(4) {
+        margin: 20% 7%; } }
+
+.lugar .mapa {
+  margin: 10% 0; }
+
+.lugar .img-lugar {
+  margin: 0; }
+  .lugar .img-lugar div img {
+    width: 100%;
+    margin: 2% 0; }
+  .lugar .img-lugar div:nth-child(2) {
+    position: relative;
+    top: 400px; }
+    @media only screen and (max-width: 480px) {
+      .lugar .img-lugar div:nth-child(2) {
+        position: static; } }
+  .lugar .img-lugar div:last-child {
+    position: relative;
+    top: 250px; }
+    @media only screen and (max-width: 480px) {
+      .lugar .img-lugar div:last-child {
+        position: static; } }
+
+.lugar .img-lugar-2 {
+  margin-bottom: 10%; }
+  .lugar .img-lugar-2 div:first-child {
+    position: relative;
+    bottom: 100px;
+    z-index: -1; }
+    @media only screen and (max-width: 480px) {
+      .lugar .img-lugar-2 div:first-child {
+        position: static; } }
+  .lugar .img-lugar-2 div:last-child {
+    position: relative;
+    bottom: 250px;
+    z-index: -1; }
+    @media only screen and (max-width: 480px) {
+      .lugar .img-lugar-2 div:last-child {
+        position: static; } }
+  .lugar .img-lugar-2 div img {
+    width: 100%;
+    margin: 2% 0; }
+
+/*FIN LUGAR.HTML*/
+/*PROYECTO.HTML*/
+/*Sección 1 – about proyecto*/
+.about-proyecto {
+  padding: 7%;
+  display: flex;
+  justify-content: space-between; }
+  .about-proyecto img {
+    opacity: 0.85;
+    margin-bottom: 10%; }
+  @media only screen and (max-width: 480px) {
+    .about-proyecto h1 {
+      font-size: 4rem; } }
+  .about-proyecto .peque {
+    font-size: 1.5rem; }
+  .about-proyecto .ref a {
+    margin-top: 15px; }
+  .about-proyecto p span.tooltp {
+    font-style: oblique;
+    display: inline; }
+    .about-proyecto p span.tooltp:hover {
+      background-position: left bottom; }
+
+/*Sección 2 – Imagenes*/
+.img-proyecto img {
+  padding-top: 10%; }
+  .img-proyecto img:first-child {
+    position: relative;
+    bottom: 150px;
+    z-index: -1; }
+    @media only screen and (max-width: 480px) {
+      .img-proyecto img:first-child {
+        position: static; } }
+  .img-proyecto img:last-child {
+    position: relative;
+    bottom: 0;
+    z-index: -1;
+    top: 150px; }
+    @media only screen and (max-width: 480px) {
+      .img-proyecto img:last-child {
+        position: static; } }
+
+/*Sección 3*/
+.about-proyecto-2 {
+  padding: 25% 0 10% 0; }
+  @media only screen and (max-width: 480px) {
+    .about-proyecto-2 .retazo {
+      width: 100%;
+      position: relative;
+      left: 10%; } }
+
+/*Estilos para sobreescribir el toltip de BS*/
+.tooltip-inner {
+  font-family: "roc-grotesk", "sans-serif";
+  font-size: 1.2rem;
+  padding: 1.5rem; }
+
+/*FIN PROYECTO.HTML*/
+/*ARCHIVO.HTML*/
+.archivo {
+  padding: 7% 0; }
+  .archivo h1 {
+    position: static; }
+
+.galeria-contenedor {
+  padding-bottom: 7%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  row-gap: 40px; }
+  .galeria-contenedor .galeria {
+    width: 32%;
+    transition: all 1s; }
+    .galeria-contenedor .galeria:hover {
+      -webkit-transform: scale(105%);
+      -o-transform: scale(105%);
+      -moz-transform: scale(105%);
+      transform: scale(105%); }
+    @media only screen and (max-width: 480px) {
+      .galeria-contenedor .galeria {
+        width: 100%; } }
+    .galeria-contenedor .galeria a img {
+      width: 100%; }
+    .galeria-contenedor .galeria a .fecha-archivo {
+      color: #000;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1.8rem; }
+
+/*FIN ARCHIVO.HTML*/
+/*OBSERVACIONES.HTML*/
+.observaciones .obs-titulo {
+  padding-top: 5%; }
+  @media only screen and (max-width: 480px) {
+    .observaciones .obs-titulo {
+      padding-top: 25%; } }
+  .observaciones .obs-titulo h1 {
+    font-size: 8rem;
+    position: static; }
+    @media only screen and (max-width: 480px) {
+      .observaciones .obs-titulo h1 {
+        font-size: 3rem; } }
+
+.observaciones .obs {
+  margin: 7% 0; }
+  .observaciones .obs h2 {
+    font-family: "roc-grotesk-extrawide", "sans-serif";
+    font-size: 2.5rem; }
+  .observaciones .obs .img-primer-parr,
+  .observaciones .obs .img-seg-parr {
+    margin-top: 3%; }
+
+.observaciones section:nth-last-child(2) {
+  margin-bottom: 15%; }
+
+/*FIN OBSERVACIONES.HTML*/
+/*GRAFICAS.HTML*/
+.about-graficas {
+  padding-top: 7%; }
+  @media only screen and (max-width: 480px) {
+    .about-graficas {
+      padding-top: 25%; } }
+  .about-graficas h1 {
+    position: static; }
+
+.container-galeria .row {
+  padding-top: 5%; }
+  @media only screen and (max-width: 480px) {
+    .container-galeria .row {
+      padding-top: 20%; } }
+  .container-galeria .row:last-child {
+    padding: 5% 0 10% 0; }
+  .container-galeria .row .tipo-grafica {
+    font-family: "roc-grotesk-extrawide", "sans-serif";
+    font-size: 1.5rem;
+    border-bottom: 2px solid #000; }
+  .container-galeria .row .item-galeria {
+    transition: all 1s; }
+    .container-galeria .row .item-galeria:hover {
+      -webkit-transform: scale(105%);
+      -o-transform: scale(105%);
+      -moz-transform: scale(105%);
+      transform: scale(105%); }
+    .container-galeria .row .item-galeria a {
+      text-decoration: none;
+      color: #000; }
+      .container-galeria .row .item-galeria a img {
+        width: 100%; }
+      .container-galeria .row .item-galeria a p {
+        font-size: 1.8rem; }
+
+/*FIN GRAFICAS.HTML*/
+/*Links Destacados*/
+.destacados p {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-transform: uppercase; }
+  .destacados p .material-icons {
+    font-size: 1.5rem; }
+
+.destacados ul {
+  padding: 0; }
+  .destacados ul li {
+    list-style-type: none;
+    border-top: 4px solid #000; }
+    .destacados ul li a:hover {
+      color: #000;
+      background-position: left bottom; }
+    @media only screen and (max-width: 480px) {
+      .destacados ul li a {
+        font-size: 1.8rem;
+        margin: 50px 0; } }
+    @media only screen and (min-width: 720px) and (max-width: 1024px) {
+      .destacados ul li a {
+        font-size: 3rem; } }
+
+.destacados .link-secciones {
+  border-top: 4px solid #000; }
+  .destacados .link-secciones a:hover {
+    color: #000;
+    background-position: left bottom; }
+
+/*Fin Links destacados*/
+/*footer*/
+footer {
+  border-top: 10px double #000;
+  padding: 5% 7%;
+  background-image: linear-gradient(yellow, #fff, #fff); }
+  @media only screen and (max-width: 480px) {
+    footer div {
+      margin-bottom: 20px; } }
+  @media only screen and (min-width: 720px) and (max-width: 1024px) {
+    footer div:last-child {
+      display: none; } }
+  footer div h2 {
+    font-family: "roc-grotesk-extrawide", "sans-serif";
+    font-size: 1.5rem;
+    font-weight: 600; }
+  footer div p {
+    font-family: "roc-grotesk", "sans-serif";
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 300; }
+    @media only screen and (max-width: 480px) {
+      footer div p {
+        margin-bottom: 20px; } }
+    footer div p a {
+      font-weight: 600;
+      color: #000; }
+    footer div p:hover {
+      color: #000; }

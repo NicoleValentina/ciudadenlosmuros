@@ -1,0 +1,56 @@
+/*Links Destacados*/
+.destacados {
+  p {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    .material-icons {
+      font-size: 1.5rem;
+    }
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      border-top: 4px solid #000;
+
+      a {
+        @extend %linkDestacado;
+        @extend %linkHover;
+
+        &:hover {
+          color: $colorPrim;
+          background-position: left bottom;
+        }
+
+        @media only screen and (max-width: 480px) {
+          font-size: 1.8rem;
+          margin: 50px 0;
+        }
+
+        @media only screen and (min-width: 720px) and (max-width: 1024px) {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  .link-secciones {
+    border-top: 4px solid $colorPrim;
+
+    a {
+        @extend %linkDestacado;
+        @extend %linkHover;
+
+        &:hover{
+            color: $colorPrim;
+            background-position: left bottom;
+        }
+    }
+  }
+}
+
+/*Fin Links destacados*/

@@ -1,0 +1,33 @@
+/*Estilos tipografía*/
+
+@mixin typoNav($color) {
+    display: inline-block;
+    font-size: 2rem;
+    font-family: $typoPrincipal;
+    font-weight: 300;
+    color: $color;
+}
+
+
+/*Imagenes header index*/
+@mixin headIndex($bottom){
+    position: relative;
+    bottom: $bottom;
+    z-index: -1;
+}
+
+/*Prefijos transformaciones*/
+@mixin transform($transform){
+    -webkit-transform: $transform;
+    -o-transform: $transform;
+    -moz-transform: $transform;
+    transform: $transform;
+}
+
+/*Texto pequeño resaltado index*/
+@mixin miniP($bg){
+    display: inline-block;
+    background: $bg;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
