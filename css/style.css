@@ -199,9 +199,10 @@ nav.navbar {
   @media only screen and (min-width: 720px) and (max-width: 1024px) {
     .index h2 {
       position: relative;
-      font-size: 5rem;
-      width: 75%;
-      top: 200px; } }
+      font-size: 4rem;
+      width: 50%;
+      top: 200px;
+      left: 0; } }
 
 .index .img-index picture:first-child {
   position: relative;

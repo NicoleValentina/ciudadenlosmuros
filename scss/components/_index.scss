@@ -49,9 +49,10 @@
 
     @media only screen and (min-width: 720px) and (max-width: 1024px) {
       position: relative;
-      font-size: 5rem;
-      width: map-get($espaciados, cuarto) * 3;
+      font-size: 4rem;
+      width: map-get($espaciados, cuarto) * 2;
       top: 200px;
+      left: 0;
     }
   }
 
