@@ -75,6 +75,9 @@ a {
 .peque, .ref {
   font-size: 1.5rem; }
 
+picture img {
+  width: 100%; }
+
 /*Components*/
 /*Navbar*/
 nav.navbar {
@@ -200,31 +203,31 @@ nav.navbar {
       width: 75%;
       top: 200px; } }
 
-.index .img-index img:first-child {
+.index .img-index picture:first-child {
   position: relative;
-  bottom: 300px;
+  bottom: 200px;
   z-index: -1; }
   @media only screen and (max-width: 480px) {
-    .index .img-index img:first-child {
+    .index .img-index picture:first-child {
       top: 20px;
       margin-bottom: 100px; } }
 
-.index .img-index img:nth-child(2) {
+.index .img-index picture:nth-child(2) {
   position: relative;
   bottom: 475px;
   z-index: -1; }
   @media only screen and (min-width: 1920px) {
-    .index .img-index img:nth-child(2) {
+    .index .img-index picture:nth-child(2) {
       position: relative;
       bottom: 550px; } }
 
-.index .img-index img:last-child {
+.index .img-index picture:last-child {
   position: relative;
   bottom: 115px;
   z-index: -1;
   right: 100px; }
   @media only screen and (min-width: 1920px) {
-    .index .img-index img:last-child {
+    .index .img-index picture:last-child {
       position: relative;
       bottom: 50px;
       right: 100px; } }
@@ -252,18 +255,18 @@ nav.navbar {
       padding: 5% 0;
       margin-bottom: 25%; } }
 
-.imgcita img:first-child {
+.imgcita picture:first-child {
   position: relative;
   bottom: 200px; }
   @media only screen and (max-width: 480px) {
-    .imgcita img:first-child {
+    .imgcita picture:first-child {
       bottom: 100px; } }
 
-.imgcita img:last-child {
+.imgcita picture:last-child {
   position: relative;
   top: 200px; }
   @media only screen and (max-width: 480px) {
-    .imgcita img:last-child {
+    .imgcita picture:last-child {
       top: 0; } }
 
 /*Fin cita principal + imagenes*/
