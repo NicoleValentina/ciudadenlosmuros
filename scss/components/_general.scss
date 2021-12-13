@@ -1,0 +1,64 @@
+/*Estilos generales*/
+
+html {
+    font-size: 10px;
+  
+    body {
+      height: map-get($espaciados, ancho);
+      width: map-get($espaciados, ancho);
+      overflow-x: hidden;
+    }
+  }
+  
+  ::selection {
+    color: $colorPrim;
+    background: $colorAcento;
+  }
+  
+  .material-icons {
+    position: relative;
+    top: 3px;
+  }
+  
+  section {
+    margin: 0 map-get($espaciados, margen);
+  
+    h1 {
+      @extend %h1Secciones;
+  
+      @media only screen and (max-width: 480px) {
+        font-size: 4rem;
+        padding-top: map-get($espaciados, cuarto);
+      }
+    }
+  }
+  
+  h1, h2, h3, h4, h5, h6{
+    font-family: map-get($typo, fuente);
+    font-display: swap;
+  }
+  
+  p {
+    font-family: map-get($typo, fuente);
+    font-size: map-get($typo, p);
+    font-display: swap;
+  }
+  
+  a {  color: $colorPrim;
+      @extend %linkHover;
+  
+      &:hover{
+          color: $colorPrim;
+          background-position: left bottom;
+      }
+  }
+  
+  .peque, .ref{
+    font-size: map-get($typo, peque)
+  }
+  
+  picture{
+    img{
+      width: 100%
+    }
+  }
