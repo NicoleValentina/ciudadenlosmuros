@@ -61,6 +61,12 @@ a {  color: $colorPrim;
   font-size: map-get($typo, peque)
 }
 
+picture{
+  img{
+    width: 100%
+  }
+}
+
 /*Components*/
 @import "components/navbar";
 @import "components/header";

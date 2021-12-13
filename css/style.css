@@ -75,6 +75,9 @@ a {
 .peque, .ref {
   font-size: 1.5rem; }
 
+picture img {
+  width: 100%; }
+
 /*Components*/
 /*Navbar*/
 nav.navbar {
@@ -265,9 +268,6 @@ nav.navbar {
   @media only screen and (max-width: 480px) {
     .imgcita picture:last-child {
       top: 0; } }
-
-.imgcita picture img {
-  width: 100%; }
 
 /*Fin cita principal + imagenes*/
 /*Sobre el proyecto*/
