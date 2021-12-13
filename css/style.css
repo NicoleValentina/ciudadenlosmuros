@@ -252,19 +252,22 @@ nav.navbar {
       padding: 5% 0;
       margin-bottom: 25%; } }
 
-.imgcita img:first-child {
+.imgcita picture:first-child {
   position: relative;
   bottom: 200px; }
   @media only screen and (max-width: 480px) {
-    .imgcita img:first-child {
+    .imgcita picture:first-child {
       bottom: 100px; } }
 
-.imgcita img:last-child {
+.imgcita picture:last-child {
   position: relative;
   top: 200px; }
   @media only screen and (max-width: 480px) {
-    .imgcita img:last-child {
+    .imgcita picture:last-child {
       top: 0; } }
+
+.imgcita picture img {
+  width: 100%; }
 
 /*Fin cita principal + imagenes*/
 /*Sobre el proyecto*/

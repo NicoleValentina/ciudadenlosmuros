@@ -124,7 +124,7 @@
 }
 
 .imgcita {
-  img {
+  picture {
     &:first-child {
       position: relative;
       bottom: 200px;
@@ -141,6 +141,10 @@
       @media only screen and (max-width: 480px) {
         top: 0;
       }
+    }
+
+    img {
+      width: 100%;
     }
   }
 }
