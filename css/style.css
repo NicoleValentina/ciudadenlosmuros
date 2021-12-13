@@ -36,6 +36,7 @@ section h1 {
   margin: 75px 0;
   text-decoration: none; }
 
+/*Components*/
 /*Estilos generales*/
 html {
   font-size: 10px; }
@@ -78,7 +79,6 @@ a {
 picture img {
   width: 100%; }
 
-/*Components*/
 /*Navbar*/
 nav.navbar {
   background-color: #fff;

@@ -35,13 +35,11 @@ html {
   
   h1, h2, h3, h4, h5, h6{
     font-family: map-get($typo, fuente);
-    font-display: swap;
   }
   
   p {
     font-family: map-get($typo, fuente);
     font-size: map-get($typo, p);
-    font-display: swap;
   }
   
   a {  color: $colorPrim;
