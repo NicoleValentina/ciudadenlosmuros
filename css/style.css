@@ -492,7 +492,8 @@ nav.navbar {
 /*FIN ARCHIVO.HTML*/
 /*OBSERVACIONES.HTML*/
 .observaciones .obs-titulo {
-  padding-top: 5%; }
+  padding-top: 5%;
+  overflow-wrap: break-word; }
   @media only screen and (max-width: 480px) {
     .observaciones .obs-titulo {
       padding-top: 25%; } }
