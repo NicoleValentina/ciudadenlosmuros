@@ -29,6 +29,10 @@
     .img-primer-parr,
     .img-seg-parr {
       margin-top: 3%;
+
+      @media only screen and (max-width: 480px){
+        margin-bottom: 10%;
+      }
     }
   }
 

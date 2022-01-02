@@ -511,6 +511,10 @@ nav.navbar {
   .observaciones .obs .img-primer-parr,
   .observaciones .obs .img-seg-parr {
     margin-top: 3%; }
+    @media only screen and (max-width: 480px) {
+      .observaciones .obs .img-primer-parr,
+      .observaciones .obs .img-seg-parr {
+        margin-bottom: 10%; } }
 
 .observaciones section:nth-last-child(2) {
   margin-bottom: 15%; }
@@ -581,6 +585,9 @@ nav.navbar {
   .destacados .link-secciones a:hover {
     color: #000;
     background-position: left bottom; }
+  @media only screen and (max-width: 480px) {
+    .destacados .link-secciones a {
+      font-size: 3rem; } }
 
 /*Fin Links destacados*/
 /*footer*/
