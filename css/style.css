@@ -551,7 +551,7 @@ nav.navbar {
     .container-galeria .row .item-galeria a {
       text-decoration: none;
       color: #000; }
-      .container-galeria .row .item-galeria a img {
+      .container-galeria .row .item-galeria a picture {
         width: 100%; }
       .container-galeria .row .item-galeria a p {
         font-size: 1.8rem; }
