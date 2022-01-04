@@ -8,16 +8,17 @@
 
     <!--Keywords y description-->
     <meta name="keywords" content="investigación, carteles, publicidad, ciudad, espectáculo, Santiago, Metro">
-    <meta name="description" content="Proyecto de investigación, observación y registro de carteles publicitarios en torno al metro en la comuna de Macul">
+    <meta name="description"
+        content="Proyecto de investigación, observación y registro de carteles publicitarios en torno al metro en la comuna de Macul">
 
-     <!--Open Graph-->
-     <meta property="og:title" content="Proyecto || La ciudad en los muros">
-     <meta property="og:type" content="website">
-     <meta property="og:url" content="https://ciudadmuros.000webhostapp.com/proyecto.html">
-     <meta property="og:image" content="https://ciudadmuros.000webhostapp.com/media/ogimage.png">
-     <meta property="og:image:type" content="image/png">
-     <meta property="og:description"
-         content="Proyecto de investigación, observación y registro de carteles publicitarios en torno al metro en la comuna de Macul">
+    <!--Open Graph-->
+    <meta property="og:title" content="Proyecto || La ciudad en los muros">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ciudadmuros.000webhostapp.com/proyecto.html">
+    <meta property="og:image" content="https://ciudadmuros.000webhostapp.com/media/ogimage.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description"
+        content="Proyecto de investigación, observación y registro de carteles publicitarios en torno al metro en la comuna de Macul">
 
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -84,8 +85,11 @@
         <section class="row about-proyecto">
             <!--Columna 1-->
             <div class="col-12">
-                <img src="https://lh3.googleusercontent.com/pw/AM-JKLWGVl8H9SV1HKHkFm_W91zahKL-C3yy6CRuYRHeF5bqNPpqJImqbZ6pk8oOdh7I9KhU2HZXY7VE71zmwFDH6y-DlQbLlJUkZKFQtwvT9L2SfNFBvvP1kf_VkEWnbdWKVyJTaB32Dzd9R_boSTk_VJOMoQ=w1200-h560-no?authuser=1"
-                    alt="Carteles publicitarios rasgados y mojados" class="float-end w-75">
+                <picture class="float-end w-75">
+                    <source media="(max-width: 480px)" srcset="../media/m_proyecto__head.webp">
+                    <source media="(min-width: 720px) and (max-width: 1024px)" srcset="../media/t_proyecto__head.webp">
+                    <img src="../media/proyecto__head.webp" alt="Carteles publicitarios rasgados y mojados">
+                </picture>
                 <h1>El proyecto</h1>
             </div>
 
@@ -98,7 +102,8 @@
                         serie para ser colgadas".</i>
                 </p>
 
-                <p class="ref"><a href="http://www.aatespanol.cl/terminos/300027221" target="_blank" rel="nofollow"> Tesauro de Arte &
+                <p class="ref"><a href="http://www.aatespanol.cl/terminos/300027221" target="_blank" rel="nofollow">
+                        Tesauro de Arte &
                         Arquitectura.</a>
                 </p>
             </div>
@@ -143,12 +148,23 @@
 
         <!--Sección 2 - Imagenes-->
         <section class="row img-proyecto">
-            <img src="../media/proyecto__muro-1_3.webp" alt="Muro con carteles y rayados" class="col-12 col-md-4" alt=""
-                data-aos="fade-up" data-aos-duration="1500">
-            <img src="../media/proyecto__muro-2_3.webp" alt="Muro con carteles pegados sobre otros carteles"
-                class="col-12 col-md-4" alt="" data-aos="fade-up" data-aos-duration="1500">
-            <img src="../media/proyecto__muro-3_3.webp" alt="muro con carteles pegados de distintos eventos"
-                class="col-12 col-md-4" alt="" data-aos="fade-up" data-aos-duration="1500">
+            <picture class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="1500">
+                <source media="(max-width: 480px)" srcset="../media/m_proyecto__muro-1_3.webp">
+                <source media="(min-width: 720px) and (max-width: 1024px)" srcset="../media/t_proyecto__muro-1_3.webp">
+                <img src="../media/proyecto__muro-1_3.webp" alt="Muro con carteles y rayados">
+            </picture>
+
+            <picture class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="1500">
+                <source media="(max-width: 480px)" srcset="../media/m_proyecto__muro-2_3.webp">
+                <source media="(min-width: 720px) and (max-width: 1024px)" srcset="../media/t_proyecto__muro-2_3.webp">
+                <img src="../media/proyecto__muro-2_3.webp" alt="Muro con carteles pegados sobre otros carteles">
+            </picture>
+
+            <picture class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="1500">
+                <source media="(max-width: 480px)" srcset="../media/m_proyecto__muro-3_3.webp">
+                <source media="(min-width: 720px) and (max-width: 1024px)" srcset="../media/t_proyecto__muro-3_3.webp">
+                <img src="../media/proyecto__muro-3_3.webp" alt="muro con carteles pegados de distintos eventos">
+            </picture>
         </section>
         <!--Fin sección 2-->
 
@@ -182,8 +198,13 @@
 
             <!--Columna 2-->
             <div class="col-10 offset-2 col-md-5 offset-md-1">
-                <img src="../media/proyecto__retazo.webp" alt="Retazo cartel publicitario"
-                    class="retazo w-100 float-end" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <picture class="retazo w-100 float-end" data-aos="fade-up" data-aos-duration="1500"
+                    data-aos-delay="200">
+                    <source media="(max-width: 480px)" srcset="../media/m_proyecto__retazo.webp">
+                    <source media="(min-width: 720px) and (max-width: 1024px)"
+                        srcset="../media/t_proyecto__retazo.webp">
+                    <img src="../media/proyecto__retazo.webp" alt="Retazo cartel publicitario">
+                </picture>
             </div>
             <!--Fin columna 2-->
         </section>
@@ -234,7 +255,8 @@
         <!--Columna 3-->
         <div class="col-12 col-md-6 col-lg-6 col-xl-4">
             <p>Si deseas leer el texto completo de este proyecto,
-                <a href="https://repositorio.uchile.cl/handle/2250/173200" target="_blank" rel="nofollow"><b>ingresa acá</b></a>
+                <a href="https://repositorio.uchile.cl/handle/2250/173200" target="_blank" rel="nofollow"><b>ingresa
+                        acá</b></a>
             </p>
             <p>Si deseas saber más,
                 <a href="mailto:nivacea@gmail.com"><b>hablemos</b></a>

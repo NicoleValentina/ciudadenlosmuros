@@ -406,7 +406,7 @@ nav.navbar {
   padding: 7%;
   display: flex;
   justify-content: space-between; }
-  .about-proyecto img {
+  .about-proyecto picture {
     opacity: 0.85;
     margin-bottom: 10%; }
   @media only screen and (max-width: 480px) {
@@ -423,22 +423,22 @@ nav.navbar {
       background-position: left bottom; }
 
 /*Sección 2 – Imagenes*/
-.img-proyecto img {
+.img-proyecto picture {
   padding-top: 10%; }
-  .img-proyecto img:first-child {
+  .img-proyecto picture:first-child {
     position: relative;
     bottom: 150px;
     z-index: -1; }
     @media only screen and (max-width: 480px) {
-      .img-proyecto img:first-child {
+      .img-proyecto picture:first-child {
         position: static; } }
-  .img-proyecto img:last-child {
+  .img-proyecto picture:last-child {
     position: relative;
     bottom: 0;
     z-index: -1;
     top: 150px; }
     @media only screen and (max-width: 480px) {
-      .img-proyecto img:last-child {
+      .img-proyecto picture:last-child {
         position: static; } }
 
 /*Sección 3*/

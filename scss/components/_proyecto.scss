@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
 
-  img {
+  picture {
     opacity: 0.85;
     margin-bottom: 10%;
   }
@@ -42,7 +42,7 @@
 
 /*Sección 2 – Imagenes*/
 .img-proyecto {
-  img {
+  picture {
     padding-top: 10%;
 
     &:first-child {
