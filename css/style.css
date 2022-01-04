@@ -345,7 +345,7 @@ nav.navbar {
   @media only screen and (max-width: 480px) {
     .lugar .about-lugar {
       padding-top: 25%; } }
-  .lugar .about-lugar img {
+  .lugar .about-lugar picture {
     margin-bottom: 10%; }
   @media only screen and (max-width: 480px) {
     .lugar .about-lugar h1 {
@@ -363,7 +363,7 @@ nav.navbar {
 
 .lugar .img-lugar {
   margin: 0; }
-  .lugar .img-lugar div img {
+  .lugar .img-lugar div picture {
     width: 100%;
     margin: 2% 0; }
   .lugar .img-lugar div:nth-child(2) {
@@ -395,7 +395,7 @@ nav.navbar {
     @media only screen and (max-width: 480px) {
       .lugar .img-lugar-2 div:last-child {
         position: static; } }
-  .lugar .img-lugar-2 div img {
+  .lugar .img-lugar-2 div picture {
     width: 100%;
     margin: 2% 0; }
 
