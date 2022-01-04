@@ -5,16 +5,20 @@
     padding-top: 5%;
     overflow-wrap: break-word;
 
-    @media only screen and (max-width: 480px){
-        padding-top: 25%
-    }
-
     h1 {
       font-size: 8rem;
       position: static;
 
-      @media only screen and (max-width: 480px){
-        font-size: 3rem;
+      @media only screen and (max-width: 480px) {
+        font-size: 2.8rem;
+      }
+
+      @media only screen and (min-width: 720px) and (max-width: 990px) {
+        font-size: 5rem;
+      }
+
+      @media only screen and (min-width: 991px) and (max-width: 1024px) {
+        font-size: 7rem;
       }
     }
   }
@@ -31,16 +35,22 @@
     .img-seg-parr {
       margin-top: 3%;
 
-      @media only screen and (max-width: 480px){
-        margin-bottom: 10%;
+      @media only screen and (max-width: 480px) {
+        margin-bottom: 5%;
+      }
+
+      picture {
+        @media only screen and (max-width: 480px) {
+          margin-bottom: 5%;
+        }
+      }
+    }
+
+    section {
+      &:nth-last-child(2) {
+        margin-bottom: 15%;
       }
     }
   }
-
-  section{
-    &:nth-last-child(2){
-        margin-bottom: 15%;
-    }
-}
 }
 /*FIN OBSERVACIONES.HTML*/

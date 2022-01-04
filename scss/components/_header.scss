@@ -20,7 +20,6 @@
 
 /*Título secciones*/
 .secc-header{
-    z-index: 999;
 
     a.volver-index{
         font-family: $typoPrincipal;
@@ -28,6 +27,7 @@
         font-size: $parrafo;
         position: fixed;
         @extend %linkHover;
+        z-index: 999;
 
         &:hover{
             color: var(--colorPrim);
@@ -39,6 +39,7 @@
         @extend %tituloHeader;
         right: 0;
         position: fixed;
+        z-index: 999;
 
         &:hover{
             animation: colores 2s;

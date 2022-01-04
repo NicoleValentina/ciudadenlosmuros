@@ -147,22 +147,23 @@ nav.navbar {
 
 /*Fin título sticky index*/
 /*Título secciones*/
-.secc-header {
+.secc-header a.volver-index {
+  font-family: "roc-grotesk", "sans-serif";
+  color: #000;
+  font-size: 2rem;
+  position: fixed;
   z-index: 999; }
-  .secc-header a.volver-index {
-    font-family: "roc-grotesk", "sans-serif";
-    color: #000;
-    font-size: 2rem;
-    position: fixed; }
-    .secc-header a.volver-index:hover {
-      color: var(--colorPrim);
-      background-position: left bottom; }
-  .secc-header p {
-    right: 0;
-    position: fixed; }
-    .secc-header p:hover {
-      animation: colores 2s;
-      animation-iteration-count: 50; }
+  .secc-header a.volver-index:hover {
+    color: var(--colorPrim);
+    background-position: left bottom; }
+
+.secc-header p {
+  right: 0;
+  position: fixed;
+  z-index: 999; }
+  .secc-header p:hover {
+    animation: colores 2s;
+    animation-iteration-count: 50; }
 
 /*Fin título secciones*/
 /*Header*/
@@ -503,15 +504,18 @@ nav.navbar {
 .observaciones .obs-titulo {
   padding-top: 5%;
   overflow-wrap: break-word; }
-  @media only screen and (max-width: 480px) {
-    .observaciones .obs-titulo {
-      padding-top: 25%; } }
   .observaciones .obs-titulo h1 {
     font-size: 8rem;
     position: static; }
     @media only screen and (max-width: 480px) {
       .observaciones .obs-titulo h1 {
-        font-size: 3rem; } }
+        font-size: 2.8rem; } }
+    @media only screen and (min-width: 720px) and (max-width: 990px) {
+      .observaciones .obs-titulo h1 {
+        font-size: 5rem; } }
+    @media only screen and (min-width: 991px) and (max-width: 1024px) {
+      .observaciones .obs-titulo h1 {
+        font-size: 7rem; } }
 
 .observaciones .obs {
   margin: 7% 0; }
@@ -524,18 +528,18 @@ nav.navbar {
     @media only screen and (max-width: 480px) {
       .observaciones .obs .img-primer-parr,
       .observaciones .obs .img-seg-parr {
-        margin-bottom: 10%; } }
-
-.observaciones section:nth-last-child(2) {
-  margin-bottom: 15%; }
+        margin-bottom: 5%; } }
+    @media only screen and (max-width: 480px) {
+      .observaciones .obs .img-primer-parr picture,
+      .observaciones .obs .img-seg-parr picture {
+        margin-bottom: 5%; } }
+  .observaciones .obs section:nth-last-child(2) {
+    margin-bottom: 15%; }
 
 /*FIN OBSERVACIONES.HTML*/
 /*GRAFICAS.HTML*/
 .about-graficas {
   padding-top: 7%; }
-  @media only screen and (max-width: 480px) {
-    .about-graficas {
-      padding-top: 25%; } }
   .about-graficas h1 {
     position: static; }
 
