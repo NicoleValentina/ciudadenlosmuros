@@ -1,7 +1,7 @@
 
 # La Ciudad en los Muros
 
-<h2> Investigación y archivo fotográfico de los carteles publicitarios de Metro Macul L4 entre 2018 y 2019.</h2>
+<h4> Investigación y archivo fotográfico de los carteles publicitarios de Metro Macul L4 entre 2018 y 2019.</h4>
 
 Proyecto de investigación basado en la observación y registro de carteles publicitarios como huella temporal y orgánica de la vida en la ciudad actual, vista desde la perspectiva del transeúnte. A partir de esto, se plantean los carteles como un imaginario fundamental de las grandes ciudades, que han ido evolucionando con ella y adecuándose al cotidiano de la urbe.
 ##
