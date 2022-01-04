@@ -5,12 +5,12 @@ nav.navbar {
   padding: 0;
 
   .container-fluid {
-    @media only screen and (max-width: 1023px) {
+    @media only screen and (max-width: 991px) {
       background: $colorPrim;
     }
 
     button.navbar-toggler {
-      @media only screen and (max-width: 1023px) {
+      @media only screen and (max-width: 991px) {
         font-family: $typoPrincipal;
         font-size: 2rem;
         color: $colorSecu;
@@ -18,7 +18,7 @@ nav.navbar {
       }
 
       &:focus{
-        @media only screen and (max-width: 1023px){
+        @media only screen and (max-width: 991px){
           border: none;
           box-shadow: none;
         }
@@ -28,7 +28,7 @@ nav.navbar {
     .navbar-collapse {
       justify-content: center;
 
-      @media only screen and (max-width: 1023px){
+      @media only screen and (max-width: 991px){
         padding: 10% 5%;
       }
 
@@ -47,9 +47,13 @@ nav.navbar {
               text-decoration: line-through;
             }
 
-            @media only screen and (max-width: 1023px){
+            @media only screen and (max-width: 991px){
               @include typoNav($colorSecu);
               background: transparent;
+            }
+
+            @media only screen and (min-width: 992px) and (max-width: 1065px) {
+              font-size: 1.5rem;
             }
 
           }
@@ -57,6 +61,15 @@ nav.navbar {
           .nav-link.active {
             font-family: $typoWide;
             font-size: 1.8rem;
+
+            @media only screen and (max-width: 991px){
+              color: $colorSecu;
+            }
+
+            @media only screen and (min-width: 992px) and (max-width: 1065px) {
+              font-size: 1.5rem;
+            }
+
           }
         }
       }

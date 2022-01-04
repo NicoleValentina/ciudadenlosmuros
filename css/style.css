@@ -83,22 +83,22 @@ picture img {
 nav.navbar {
   background-color: #fff;
   padding: 0; }
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 991px) {
     nav.navbar .container-fluid {
       background: #000; } }
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 991px) {
     nav.navbar .container-fluid button.navbar-toggler {
       font-family: "roc-grotesk", "sans-serif";
       font-size: 2rem;
       color: #fff;
       border: none; } }
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 991px) {
     nav.navbar .container-fluid button.navbar-toggler:focus {
       border: none;
       box-shadow: none; } }
   nav.navbar .container-fluid .navbar-collapse {
     justify-content: center; }
-    @media only screen and (max-width: 1023px) {
+    @media only screen and (max-width: 991px) {
       nav.navbar .container-fluid .navbar-collapse {
         padding: 10% 5%; } }
     nav.navbar .container-fluid .navbar-collapse ul li {
@@ -113,7 +113,7 @@ nav.navbar {
           color: #000;
           background-position: left bottom;
           text-decoration: line-through; }
-        @media only screen and (max-width: 1023px) {
+        @media only screen and (max-width: 991px) {
           nav.navbar .container-fluid .navbar-collapse ul li a {
             display: inline-block;
             font-size: 2rem;
@@ -121,9 +121,18 @@ nav.navbar {
             font-weight: 300;
             color: #fff;
             background: transparent; } }
+        @media only screen and (min-width: 992px) and (max-width: 1065px) {
+          nav.navbar .container-fluid .navbar-collapse ul li a {
+            font-size: 1.5rem; } }
       nav.navbar .container-fluid .navbar-collapse ul li .nav-link.active {
         font-family: "roc-grotesk-extrawide", "sans-serif";
         font-size: 1.8rem; }
+        @media only screen and (max-width: 991px) {
+          nav.navbar .container-fluid .navbar-collapse ul li .nav-link.active {
+            color: #fff; } }
+        @media only screen and (min-width: 992px) and (max-width: 1065px) {
+          nav.navbar .container-fluid .navbar-collapse ul li .nav-link.active {
+            font-size: 1.5rem; } }
 
 /*Título sticky index*/
 .main-titulo {
